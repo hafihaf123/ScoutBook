@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appearance_title">Appearance</string>
+    <string name="theme">Theme</string>
+    <string name="dark_theme">Dark</string>
+    <string name="light_theme">Light</string>
+    <string name="system_theme">System</string>
+    <string name="dynamic_colors_title">Dynamic Colors</string>
+    <string name="dynamic_colors_description">Enable Dynamic Colors (Android 12+)</string>
+    <string name="contrast">Colour Contrast</string>
+    <string name="standard_contrast">Standard</string>
+    <string name="medium_contrast">Medium</string>
+    <string name="high_contrast">High</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScoutBook</string>
+    <string name="home">Domov</string>
+    <string name="calendar">Kalendár</string>
+    <string name="home_descr">Domov</string>
+    <string name="calendar_descr">Kalendár</string>
+    <string name="welcome_message">Vitajte!</string>
+    <string name="activity_badges_icon_descr">Odborky</string>
+    <string name="activity_badges_title">Odborky</string>
+    <string name="settings">Nastavenia</string>
+    <string name="settings_descr">Nastavenia</string>
+    <string name="appearance_title">Vzhľad</string>
+    <string name="theme">Téma</string>
+    <string name="dark_theme">Tmavá</string>
+    <string name="light_theme">Svetlá</string>
+    <string name="system_theme">Systém</string>
+    <string name="dynamic_colors_title">Dynamické farby</string>
+    <string name="dynamic_colors_description">Zapnúť dynamické farby (Android 12+)</string>
+    <string name="contrast">Farebný kontrast</string>
+    <string name="standard_contrast">Štandardný</string>
+    <string name="medium_contrast">Stredný</string>
+    <string name="high_contrast">Vysoký</string>
+    <string name="toggle_theme">Prepnúť tému</string>
+</resources>
