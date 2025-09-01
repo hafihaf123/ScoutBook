@@ -1,4 +1,4 @@
-package sk.scoutbook.app.ui.screen.settings.data.category.item
+package sk.scoutbook.app.ui.screen.settings.data.item
 
 import androidx.annotation.StringRes
 import kotlinx.coroutines.flow.StateFlow

@@ -26,9 +26,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import sk.scoutbook.app.ui.screen.settings.data.category.SettingsCategory
-import sk.scoutbook.app.ui.screen.settings.data.category.item.MultiChoiceItem
-import sk.scoutbook.app.ui.screen.settings.data.category.item.ToggleItem
+import sk.scoutbook.app.ui.screen.settings.data.SettingsCategory
+import sk.scoutbook.app.ui.screen.settings.data.item.MultiChoiceItem
+import sk.scoutbook.app.ui.screen.settings.data.item.ToggleItem
 
 @Composable
 fun ExpandableSettingsCategory(category: SettingsCategory, modifier: Modifier = Modifier) {

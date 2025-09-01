@@ -1,8 +1,8 @@
-package sk.scoutbook.app.ui.screen.settings.data.category.item
+package sk.scoutbook.app.ui.screen.settings.data.item
 
 import androidx.annotation.StringRes
 import kotlinx.coroutines.flow.StateFlow
-import sk.scoutbook.app.ui.screen.settings.data.category.item.options.SettingsMultiChoiceOption
+import sk.scoutbook.app.ui.screen.settings.data.item.options.SettingsMultiChoiceOption
 
 open class MultiChoiceItem<T>(
     @param:StringRes val title: Int,

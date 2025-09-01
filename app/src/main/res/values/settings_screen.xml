@@ -11,4 +11,6 @@
     <string name="standard_contrast">Standard</string>
     <string name="medium_contrast">Medium</string>
     <string name="high_contrast">High</string>
+    <string name="language_item_title">Language</string>
+    <string name="localization_title">Localization</string>
 </resources>

@@ -1,4 +1,4 @@
-package sk.scoutbook.app.ui.screen.settings.data.category.item
+package sk.scoutbook.app.ui.screen.settings.data.item
 
 import sk.scoutbook.app.R
 import sk.scoutbook.app.ui.theme.ThemeViewModel

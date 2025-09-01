@@ -8,8 +8,9 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import sk.scoutbook.app.ui.screen.settings.data.category.AppearanceCategory
-import sk.scoutbook.app.ui.screen.settings.data.category.SettingsCategory
+import sk.scoutbook.app.ui.screen.settings.data.AppearanceCategory
+import sk.scoutbook.app.ui.screen.settings.data.LocalizationCategory
+import sk.scoutbook.app.ui.screen.settings.data.SettingsCategory
 import sk.scoutbook.app.ui.theme.ThemeViewModel
 
 @HiltViewModel
@@ -18,9 +19,10 @@ class SettingsViewModel @Inject constructor() : ViewModel() {
     private val _uiState = MutableStateFlow(SettingsUiState())
     val uiState: StateFlow<SettingsUiState> = _uiState.asStateFlow()
 
-    fun loadSettings(themeViewModel: ThemeViewModel, systemTheme: Boolean) {
+    fun loadSettings(themeViewModel: ThemeViewModel) {
         val categories: List<SettingsCategory> = listOf(
-            AppearanceCategory(themeViewModel, systemTheme)
+            AppearanceCategory(themeViewModel),
+            LocalizationCategory()
         )
         viewModelScope.launch {
             _uiState.value = SettingsUiState(categories = categories)

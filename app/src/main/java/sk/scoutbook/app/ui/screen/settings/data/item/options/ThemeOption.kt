@@ -1,4 +1,4 @@
-package sk.scoutbook.app.ui.screen.settings.data.category.item.options
+package sk.scoutbook.app.ui.screen.settings.data.item.options
 
 import sk.scoutbook.app.R
 import sk.scoutbook.app.ui.theme.ThemeViewModel
@@ -14,7 +14,7 @@ enum class ThemeOption(val isDarkTheme: Boolean?) : SettingsMultiChoiceOption<Th
         override val title = R.string.system_theme
     };
 
-    fun perform(themeViewModel: ThemeViewModel, systemTheme: Boolean) {
-        themeViewModel.setThemeOption(this, systemTheme)
+    fun perform(themeViewModel: ThemeViewModel) {
+        themeViewModel.setThemeOption(this)
     }
 }

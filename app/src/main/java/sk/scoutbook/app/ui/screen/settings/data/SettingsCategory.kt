@@ -1,8 +1,8 @@
-package sk.scoutbook.app.ui.screen.settings.data.category
+package sk.scoutbook.app.ui.screen.settings.data
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import sk.scoutbook.app.ui.screen.settings.data.category.item.SettingsItem
+import sk.scoutbook.app.ui.screen.settings.data.item.SettingsItem
 
 open class SettingsCategory(
     @param:StringRes val title: Int,

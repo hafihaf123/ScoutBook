@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
-import sk.scoutbook.app.ui.screen.settings.data.category.item.ToggleItem
+import sk.scoutbook.app.ui.screen.settings.data.item.ToggleItem
 
 @Composable
 fun SettingsToggleItem(item: ToggleItem, modifier: Modifier = Modifier) {

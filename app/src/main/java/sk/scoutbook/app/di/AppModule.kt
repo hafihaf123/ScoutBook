@@ -10,7 +10,6 @@ import sk.scoutbook.app.ui.screen.home.data.repository.Repository
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
-
     @Provides
     fun provideRepository(): Repository = FakeRepository()
 }

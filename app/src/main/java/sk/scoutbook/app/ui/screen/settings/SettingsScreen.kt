@@ -35,7 +35,7 @@ fun SettingsScreen(
     val systemTheme = isSystemInDarkTheme()
 
     LaunchedEffect(systemTheme) {
-        viewModel.loadSettings(themeViewModel, systemTheme)
+        viewModel.loadSettings(themeViewModel)
     }
 
     val uiState by viewModel.uiState.collectAsState()

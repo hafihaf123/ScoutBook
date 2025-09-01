@@ -11,7 +11,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
-import sk.scoutbook.app.ui.screen.settings.data.category.item.options.ThemeOption
+import sk.scoutbook.app.ui.screen.settings.data.item.options.ThemeOption
 import sk.scoutbook.app.ui.theme.ContrastMode
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -41,7 +41,7 @@ class ThemeRepository @Inject constructor(
             } ?: ContrastMode.STANDARD)
     }
 
-    suspend fun saveThemeOption(themeOption: ThemeOption, systemTheme: Boolean) {
+    suspend fun saveThemeOption(themeOption: ThemeOption) {
         context.dataStore.edit { preferences ->
             preferences[ThemePreferencesKeys.SELECTED_THEME_OPTION] = themeOption.name
         }

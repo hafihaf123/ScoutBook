@@ -1,4 +1,4 @@
-package sk.scoutbook.app.ui.screen.settings.data.category.item.options
+package sk.scoutbook.app.ui.screen.settings.data.item.options
 
 import sk.scoutbook.app.R
 import sk.scoutbook.app.ui.theme.ContrastMode

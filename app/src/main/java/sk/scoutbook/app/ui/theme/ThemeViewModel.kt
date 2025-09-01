@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import sk.scoutbook.app.data.theme.ThemeRepository
-import sk.scoutbook.app.ui.screen.settings.data.category.item.options.ThemeOption
+import sk.scoutbook.app.ui.screen.settings.data.item.options.ThemeOption
 import javax.inject.Inject
 
 @HiltViewModel
@@ -16,7 +16,6 @@ class ThemeViewModel @Inject constructor(
     private val themeRepository: ThemeRepository
 ) : ViewModel() {
     val themePreferencesFlow = themeRepository.themePreferencesFlow
-
 
     val selectedThemeOptionFlow = themePreferencesFlow.map { it.selectedThemeOption }.stateIn(
         scope = viewModelScope,
@@ -39,9 +38,9 @@ class ThemeViewModel @Inject constructor(
         }
     }
 
-    fun setThemeOption(option: ThemeOption, systemTheme: Boolean = false) {
+    fun setThemeOption(option: ThemeOption) {
         viewModelScope.launch {
-            themeRepository.saveThemeOption(option, systemTheme)
+            themeRepository.saveThemeOption(option)
         }
     }
 

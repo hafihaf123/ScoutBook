@@ -51,6 +51,11 @@ android {
             excludes += "/META-INF/gradle/incremental.annotation.processors"
         }
     }
+
+    androidResources {
+        @Suppress("UnstableApiUsage")
+        generateLocaleConfig = true
+    }
 }
 
 dependencies {

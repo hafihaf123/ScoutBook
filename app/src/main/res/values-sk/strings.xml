@@ -22,4 +22,6 @@
     <string name="medium_contrast">Stredný</string>
     <string name="high_contrast">Vysoký</string>
     <string name="toggle_theme">Prepnúť tému</string>
+    <string name="language_item_title">Jazyk</string>
+    <string name="localization_title">Lokalizácia</string>
 </resources>

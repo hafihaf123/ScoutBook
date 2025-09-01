@@ -10,10 +10,8 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.staticCompositionLocalOf
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowInsetsControllerCompat
@@ -246,19 +244,9 @@ private val highContrastDarkColorScheme = darkColorScheme(
     surfaceContainerHighest = surfaceContainerHighestDarkHighContrast,
 )
 
-@Immutable
-data class ColorFamily(
-    val color: Color, val onColor: Color, val colorContainer: Color, val onColorContainer: Color
-)
-
-val unspecified_scheme = ColorFamily(
-    Color.Unspecified, Color.Unspecified, Color.Unspecified, Color.Unspecified
-)
-
 enum class ContrastMode(val lightColorScheme: ColorScheme, val darkColorScheme: ColorScheme) {
     STANDARD(lightScheme, darkScheme), MEDIUM(
-        mediumContrastLightColorScheme,
-        mediumContrastDarkColorScheme
+        mediumContrastLightColorScheme, mediumContrastDarkColorScheme
     ),
     HIGH(highContrastLightColorScheme, highContrastDarkColorScheme)
 }
@@ -266,7 +254,6 @@ enum class ContrastMode(val lightColorScheme: ColorScheme, val darkColorScheme: 
 @Composable
 fun ScoutBookTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
     contrastMode: ContrastMode = ContrastMode.STANDARD,
